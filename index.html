@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A Poppy Appeal prototype website for coordinating volunteers, events, donations, and reporting.">
+    <title>Poppy Appeal Prototype</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Poppy Appeal Prototype home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Poppy Appeal Prototype</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#overview">Overview</a>
+        <a href="#data">Data Model</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Volunteer and donation coordination</p>
+          <h1>Poppy Appeal operations, made easier to track.</h1>
+          <p class="lede">A clean prototype for managing appeal events, volunteer assignments, donations, expenses, and data quality checks in one place.</p>
+          <div class="actions" aria-label="Page actions">
+            <a class="button primary" href="#overview">View prototype</a>
+            <a class="button secondary" href="https://github.com/armstrongalfie04-coder/armstrongalfie04-coder.github.io" rel="noreferrer">GitHub repo</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Stylised poppy appeal operations dashboard">
+          <div class="poppy-scene" aria-hidden="true">
+            <span class="petal petal-one"></span>
+            <span class="petal petal-two"></span>
+            <span class="petal petal-three"></span>
+            <span class="petal petal-four"></span>
+            <span class="poppy-centre"></span>
+          </div>
+          <div class="dashboard-panel">
+            <div class="panel-header">
+              <span>Appeal Snapshot</span>
+              <strong>2026</strong>
+            </div>
+            <div class="metric-grid">
+              <div>
+                <span class="metric-label">Volunteers</span>
+                <strong>128</strong>
+              </div>
+              <div>
+                <span class="metric-label">Events</span>
+                <strong>34</strong>
+              </div>
+              <div>
+                <span class="metric-label">Donations</span>
+                <strong>£18.4k</strong>
+              </div>
+              <div>
+                <span class="metric-label">Data quality</span>
+                <strong>98%</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="overview">
+        <div class="section-heading">
+          <p class="eyebrow">Overview</p>
+          <h2>Built around the work volunteers actually do</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-icon">01</span>
+            <h3>Plan events</h3>
+            <p>Track locations, dates, targets, and event status so collection activity is easy to review.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">02</span>
+            <h3>Coordinate people</h3>
+            <p>Store volunteer roles, training status, active availability, and assignments against events.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">03</span>
+            <h3>Measure impact</h3>
+            <p>Compare donations and expenses to understand net fundraising results across the appeal.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="band" id="data">
+        <div class="section-heading">
+          <p class="eyebrow">Data Model</p>
+          <h2>From raw files to clean reporting tables</h2>
+        </div>
+        <div class="data-layout">
+          <div class="data-copy">
+            <p>The prototype separates imported CSV files from validated final tables. That keeps mistakes traceable while still giving the appeal team clean data for reporting.</p>
+            <ul class="check-list">
+              <li>Staging tables preserve the original source rows.</li>
+              <li>Validation errors record rejected values and field-level messages.</li>
+              <li>Lookup tables keep roles, statuses, payment methods, and expense types consistent.</li>
+              <li>Final tables support volunteers, events, assignments, donations, and expenses.</li>
+            </ul>
+          </div>
+          <div class="schema-card" aria-label="Prototype table groups">
+            <div class="schema-row"><span>Raw CSV files</span><strong>5 sources</strong></div>
+            <div class="schema-row"><span>Staging tables</span><strong>5 tables</strong></div>
+            <div class="schema-row"><span>Validation log</span><strong>field checks</strong></div>
+            <div class="schema-row"><span>Clean tables</span><strong>reporting ready</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="workflow">
+        <div class="section-heading">
+          <p class="eyebrow">Workflow</p>
+          <h2>A simple path for appeal data</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <span>1</span>
+            <h3>Collect</h3>
+            <p>Gather volunteers, events, assignments, donations, and expenses from source files.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>Validate</h3>
+            <p>Check statuses, payment methods, amounts, missing values, and relationship links.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>Report</h3>
+            <p>Use clean tables to review event performance and operational readiness.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-band" id="contact">
+        <div>
+          <p class="eyebrow">Next step</p>
+          <h2>Ready for GitHub Pages</h2>
+          <p>This static site can be published directly from the repository root with no extra framework setup.</p>
+        </div>
+        <a class="button primary" href="#top">Back to top</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Poppy Appeal Prototype</span>
+      <span>Built for GitHub Pages</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
