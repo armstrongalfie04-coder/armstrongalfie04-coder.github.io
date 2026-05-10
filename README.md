@@ -1,5 +1,7 @@
-# Poppy Appeal Prototype Website
+# Alfie Armstrong Portfolio
 
-Static GitHub Pages website for the Poppy Appeal prototype.
+Static personal portfolio published with GitHub Pages.
 
-Open `index.html` locally, or publish from the repository root to GitHub Pages.
+The live site is available at:
+
+https://armstrongalfie04-coder.github.io/

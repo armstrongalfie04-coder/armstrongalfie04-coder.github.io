@@ -3,20 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A Poppy Appeal prototype website for coordinating volunteers, events, donations, and reporting.">
-    <title>Poppy Appeal Prototype</title>
+    <meta name="description" content="Personal portfolio for Alfie Armstrong, showcasing data, web, and project work.">
+    <title>Alfie Armstrong | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Poppy Appeal Prototype home">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span>Poppy Appeal Prototype</span>
+      <a class="brand" href="#top" aria-label="Alfie Armstrong portfolio home">
+        <span class="brand-mark" aria-hidden="true">AA</span>
+        <span>Alfie Armstrong</span>
       </a>
       <nav class="nav" aria-label="Primary navigation">
-        <a href="#overview">Overview</a>
-        <a href="#data">Data Model</a>
-        <a href="#workflow">Workflow</a>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -24,134 +24,156 @@
     <main id="top">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Volunteer and donation coordination</p>
-          <h1>Poppy Appeal operations, made easier to track.</h1>
-          <p class="lede">A clean prototype for managing appeal events, volunteer assignments, donations, expenses, and data quality checks in one place.</p>
+          <p class="eyebrow">Personal portfolio</p>
+          <h1>Data-minded builder with a practical eye for useful tools.</h1>
+          <p class="lede">I am Alfie Armstrong. I build clean websites, database prototypes, and small digital systems that make information easier to understand and use.</p>
           <div class="actions" aria-label="Page actions">
-            <a class="button primary" href="#overview">View prototype</a>
-            <a class="button secondary" href="https://github.com/armstrongalfie04-coder/armstrongalfie04-coder.github.io" rel="noreferrer">GitHub repo</a>
+            <a class="button primary" href="#work">View work</a>
+            <a class="button secondary" href="https://github.com/armstrongalfie04-coder" rel="noreferrer">GitHub profile</a>
           </div>
         </div>
-        <div class="hero-visual" aria-label="Stylised poppy appeal operations dashboard">
-          <div class="poppy-scene" aria-hidden="true">
-            <span class="petal petal-one"></span>
-            <span class="petal petal-two"></span>
-            <span class="petal petal-three"></span>
-            <span class="petal petal-four"></span>
-            <span class="poppy-centre"></span>
+
+        <div class="hero-visual" aria-label="Portfolio summary panel">
+          <div class="profile-orbit" aria-hidden="true">
+            <span class="orb orb-one"></span>
+            <span class="orb orb-two"></span>
+            <span class="orb orb-three"></span>
           </div>
-          <div class="dashboard-panel">
+          <div class="profile-panel">
             <div class="panel-header">
-              <span>Appeal Snapshot</span>
+              <span>Current Focus</span>
               <strong>2026</strong>
             </div>
             <div class="metric-grid">
               <div>
-                <span class="metric-label">Volunteers</span>
-                <strong>128</strong>
+                <span class="metric-label">Primary area</span>
+                <strong>Data</strong>
               </div>
               <div>
-                <span class="metric-label">Events</span>
-                <strong>34</strong>
+                <span class="metric-label">Web work</span>
+                <strong>Pages</strong>
               </div>
               <div>
-                <span class="metric-label">Donations</span>
-                <strong>£18.4k</strong>
+                <span class="metric-label">Tools</span>
+                <strong>SQL</strong>
               </div>
               <div>
-                <span class="metric-label">Data quality</span>
-                <strong>98%</strong>
+                <span class="metric-label">Style</span>
+                <strong>Clear</strong>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section" id="overview">
+      <section class="section" id="work">
         <div class="section-heading">
-          <p class="eyebrow">Overview</p>
-          <h2>Built around the work volunteers actually do</h2>
+          <p class="eyebrow">Selected work</p>
+          <h2>Projects that show how I think and build</h2>
         </div>
-        <div class="feature-grid">
-          <article class="feature-card">
-            <span class="feature-icon">01</span>
-            <h3>Plan events</h3>
-            <p>Track locations, dates, targets, and event status so collection activity is easy to review.</p>
+        <div class="project-grid">
+          <article class="project-card featured">
+            <div>
+              <span class="project-type">Database prototype</span>
+              <h3>Poppy Appeal data model</h3>
+              <p>A SQLite prototype for tracking volunteers, events, assignments, donations, expenses, validation errors, and clean reporting tables.</p>
+            </div>
+            <ul class="tag-list" aria-label="Project skills">
+              <li>SQLite</li>
+              <li>CSV pipelines</li>
+              <li>Data quality</li>
+            </ul>
           </article>
-          <article class="feature-card">
-            <span class="feature-icon">02</span>
-            <h3>Coordinate people</h3>
-            <p>Store volunteer roles, training status, active availability, and assignments against events.</p>
+
+          <article class="project-card">
+            <div>
+              <span class="project-type">Web publishing</span>
+              <h3>GitHub Pages portfolio</h3>
+              <p>A static personal website deployed through GitHub Pages with no build step, designed to be easy to edit and keep live.</p>
+            </div>
+            <ul class="tag-list" aria-label="Project skills">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>GitHub</li>
+            </ul>
           </article>
-          <article class="feature-card">
-            <span class="feature-icon">03</span>
-            <h3>Measure impact</h3>
-            <p>Compare donations and expenses to understand net fundraising results across the appeal.</p>
+
+          <article class="project-card">
+            <div>
+              <span class="project-type">Learning project</span>
+              <h3>Data workflow experiments</h3>
+              <p>Small experiments with raw files, database structure, and repeatable scripts to practise turning messy inputs into usable outputs.</p>
+            </div>
+            <ul class="tag-list" aria-label="Project skills">
+              <li>Python</li>
+              <li>Data design</li>
+              <li>Documentation</li>
+            </ul>
           </article>
         </div>
       </section>
 
-      <section class="band" id="data">
+      <section class="band" id="skills">
         <div class="section-heading">
-          <p class="eyebrow">Data Model</p>
-          <h2>From raw files to clean reporting tables</h2>
+          <p class="eyebrow">Skills</p>
+          <h2>Comfortable across data, websites, and project structure</h2>
         </div>
-        <div class="data-layout">
-          <div class="data-copy">
-            <p>The prototype separates imported CSV files from validated final tables. That keeps mistakes traceable while still giving the appeal team clean data for reporting.</p>
+        <div class="skills-layout">
+          <div class="skills-copy">
+            <p>I like work where the details matter: naming things clearly, keeping files organised, and making the next step obvious for whoever opens the project later.</p>
             <ul class="check-list">
-              <li>Staging tables preserve the original source rows.</li>
-              <li>Validation errors record rejected values and field-level messages.</li>
-              <li>Lookup tables keep roles, statuses, payment methods, and expense types consistent.</li>
-              <li>Final tables support volunteers, events, assignments, donations, and expenses.</li>
+              <li>Designing small database schemas and relationships.</li>
+              <li>Building responsive static websites with HTML and CSS.</li>
+              <li>Using Git and GitHub Pages to publish work online.</li>
+              <li>Writing simple scripts and notes so projects can be repeated.</li>
             </ul>
           </div>
-          <div class="schema-card" aria-label="Prototype table groups">
-            <div class="schema-row"><span>Raw CSV files</span><strong>5 sources</strong></div>
-            <div class="schema-row"><span>Staging tables</span><strong>5 tables</strong></div>
-            <div class="schema-row"><span>Validation log</span><strong>field checks</strong></div>
-            <div class="schema-row"><span>Clean tables</span><strong>reporting ready</strong></div>
+          <div class="skill-card" aria-label="Skills summary">
+            <div class="skill-row"><span>Frontend</span><strong>HTML, CSS, JavaScript</strong></div>
+            <div class="skill-row"><span>Data</span><strong>SQL, CSV, validation</strong></div>
+            <div class="skill-row"><span>Tools</span><strong>Git, GitHub, VS Code</strong></div>
+            <div class="skill-row"><span>Strength</span><strong>Clear structure</strong></div>
           </div>
         </div>
       </section>
 
-      <section class="section" id="workflow">
+      <section class="section" id="about">
         <div class="section-heading">
-          <p class="eyebrow">Workflow</p>
-          <h2>A simple path for appeal data</h2>
+          <p class="eyebrow">About</p>
+          <h2>Practical, curious, and always improving the next version</h2>
         </div>
         <div class="timeline">
           <article>
             <span>1</span>
-            <h3>Collect</h3>
-            <p>Gather volunteers, events, assignments, donations, and expenses from source files.</p>
+            <h3>Explore</h3>
+            <p>I start by understanding the problem, the data, and what a useful result should look like.</p>
           </article>
           <article>
             <span>2</span>
-            <h3>Validate</h3>
-            <p>Check statuses, payment methods, amounts, missing values, and relationship links.</p>
+            <h3>Build</h3>
+            <p>I turn the idea into a working prototype with clear files, simple structure, and readable code.</p>
           </article>
           <article>
             <span>3</span>
-            <h3>Report</h3>
-            <p>Use clean tables to review event performance and operational readiness.</p>
+            <h3>Improve</h3>
+            <p>I review what works, tidy what is rough, and make the project easier to explain and share.</p>
           </article>
         </div>
       </section>
 
       <section class="contact-band" id="contact">
         <div>
-          <p class="eyebrow">Next step</p>
-          <h2>Ready for GitHub Pages</h2>
-          <p>This static site can be published directly from the repository root with no extra framework setup.</p>
+          <p class="eyebrow">Contact</p>
+          <h2>Want to see the work?</h2>
+          <p>The easiest place to start is my GitHub profile, where this portfolio and future projects will live.</p>
         </div>
-        <a class="button primary" href="#top">Back to top</a>
+        <a class="button primary" href="https://github.com/armstrongalfie04-coder" rel="noreferrer">Open GitHub</a>
       </section>
     </main>
 
     <footer class="footer">
-      <span>Poppy Appeal Prototype</span>
-      <span>Built for GitHub Pages</span>
+      <span>Alfie Armstrong</span>
+      <span>Portfolio built with GitHub Pages</span>
     </footer>
 
     <script src="script.js"></script>
